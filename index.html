@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Project</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <div id="loader" class="loader"></div>
+    <div class="shape"></div>
+
+
+    <header>
+        <h1>My Website</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+    </nav>
+
+    <main>
+        <section class="fade-in">
+            <h2>Welcome</h2>
+            <p>This content will fade in using our animation.</p>
+        </section>
+
+        <button class="btn-anim">Press Me</button>
+    </main>
+
+    <footer>
+        <p>© 2025 MySite</p>
+    </footer>
+
+    <script>
+        setTimeout(() => {
+            const loader = document.getElementById('loader');
+            if (loader) loader.style.display = 'none';
+        }, 2000);
+    </script>
+</body>
+</html>
